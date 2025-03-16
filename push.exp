@@ -1,0 +1,14 @@
+#!/usr/bin/expect
+
+set PASSWORD "[lindex $argv 0]"
+
+spawn git push --verbose
+
+expect "Username for 'https://github.com':" {
+  send "dacracot\n"
+
+  expect "Password for 'https://dacracot@github.com':" {
+    send "$PASSWORD\n"
+    }
+
+  }
