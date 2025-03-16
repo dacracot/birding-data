@@ -11,8 +11,8 @@ git add --verbose -A
 echo "==== commit ===="
 git commit --verbose -a -m "daily backup"
 echo "==== push ===="
+# avoid user/pass prompt by using ssh and shared rsa key
 git push --verbose
-# push.exp ${PASSWORD}
 echo "==== done ===="
 # how long did it take
 DURATION=$SECONDS
