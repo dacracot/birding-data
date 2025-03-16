@@ -6,13 +6,13 @@ MONTH=`date '+%m'`
 DAY=`date '+%d'`
 # ---------------------------------------------------
 {
-echo "add all"
+echo "==== add all ===="
 git add --verbose -A
-echo "commit"
+echo "==== commit ===="
 git commit --verbose -a -m "daily backup"
-echo "push"
+echo "==== push ===="
 git push --verbose
-echo "done"
+echo "==== done ===="
 # how long did it take
 DURATION=$SECONDS
 echo "$(($DURATION / 60)) minutes and $(($DURATION % 60)) seconds elapsed."

@@ -1,32 +1,6 @@
-[main c1733dc] daily backup
- Committer: David Craig Cothren <dacracot@raspberrypi>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 3 files changed, 15 insertions(+)
- create mode 100644 logs/2025-03-16-push.err
- create mode 100644 logs/2025-03-16-push.out
- create mode 100755 push.sh
-0 minutes and 18 seconds elapsed.
-[main 5ccd958] daily backup
- 2 files changed, 21 insertions(+)
-0 minutes and 14 seconds elapsed.
-add all
+==== add all ====
+add 'island/2025-03-16-birds.db.gz'
 add 'logs/2025-03-16-push.err'
 add 'logs/2025-03-16-push.out'
 add 'push.sh'
-commit
-[main d688e5c] daily backup
- 3 files changed, 17 insertions(+), 3 deletions(-)
-push
-done
-0 minutes and 13 seconds elapsed.
+==== commit ====
