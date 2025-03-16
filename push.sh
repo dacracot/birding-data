@@ -11,9 +11,8 @@ git add --verbose -A
 echo "==== commit ===="
 git commit --verbose -a -m "daily backup"
 echo "==== push ===="
-
-push.exp ${PASSWORD}
-
+git push --verbose
+# push.exp ${PASSWORD}
 echo "==== done ===="
 # how long did it take
 DURATION=$SECONDS
