@@ -6,6 +6,7 @@ MONTH=`date '+%m'`
 DAY=`date '+%d'`
 # ---------------------------------------------------
 {
+pushd ${HOME}/birding-data
 echo "==== add all ===="
 git add --verbose -A
 echo "==== commit ===="
@@ -14,6 +15,7 @@ echo "==== push ===="
 # avoid user/pass prompt by using ssh and shared rsa key
 git push --verbose
 echo "==== done ===="
+popd
 # how long did it take
 DURATION=$SECONDS
 echo "$(($DURATION / 60)) minutes and $(($DURATION % 60)) seconds elapsed."
