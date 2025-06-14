@@ -9,6 +9,8 @@ DAY=`date '+%d'`
 pushd ${HOME}/birding-data
 echo "==== remove old ===="
 find ${HOME}/birding-data/ -type f -mtime +90 -name "*-birds.db.gz" -exec git rm {} \;
+echo "==== pull ===="
+git pull --verbose
 echo "==== add all ===="
 git add --verbose -A
 echo "==== commit ===="
